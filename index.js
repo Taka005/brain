@@ -13,11 +13,14 @@ database = require("./data.json");
 
 client.on("ready",()=>{
   console.log(`ログイン:${client.user.tag}`);
-  client.user.setActivity({"name": "学習中... | Training..."});
+  client.user.setActivity("name": "学習中... | Training...",{
+    type: "PLAYING"
+  });
 });
 
 client.on("messageCreate",async(message)=>{
-  if(message.author.id != "698395012219666432") return;
+  console.log(`${message.author.tag}:${message.content}`)
+  if(message.author.bot) return;
   let data = {
       "message": message.cleanContent,
       "channel": message.channelId,
