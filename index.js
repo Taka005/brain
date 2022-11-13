@@ -13,7 +13,7 @@ database = require("./data.json");
 
 client.on("ready",()=>{
   console.log(`ログイン:${client.user.tag}`);
-  client.user.setActivity("name": "学習中... | Training...",{
+  client.user.setActivity("学習中... | Training...",{
     type: "PLAYING"
   });
 });
