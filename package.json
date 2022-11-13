@@ -1,0 +1,22 @@
+{
+  "name": "brain",
+  "version": "1.0.0",
+  "description": "brain.jsを使用したAIみたいなやつ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Taka005/brain.git"
+  },
+  "author": "Taka005",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Taka005/brain/issues"
+  },
+  "homepage": "https://github.com/Taka005/brain#readme",
+  "dependencies": {
+    "discord.js": "^13.12.0"
+  }
+}
