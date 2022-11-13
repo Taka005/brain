@@ -34,3 +34,11 @@ client.on("messageCreate",async(message)=>{
 });
 
 client.login(process.env.TOKEN);
+
+process.on("uncaughtException",async(error) =>{
+  console.error(`\x1b[31mERROR: ${error.stack}`);
+});
+
+process.on("unhandledRejection",async(error) =>{
+  console.error(`\x1b[31mERROR: ${error.stack}`);
+});
